@@ -17,7 +17,7 @@ export const Search: React.FC<SearchProps> = ({
     {categories.length > 0 && (
       <div className={styles.categories}>
         {categories.map(category => (
-          <button type="button" className={styles.category}>
+          <button key={category} type="button" className={styles.category}>
             {category}
           </button>
         ))}
