@@ -87,7 +87,7 @@ const Home: NextPage<HomeProps> = ({
 
       <nav className={styles.nav}>
         <div className={styles.navBack}>
-
+          
         </div>
       </nav>
       <main className={styles.main}>
@@ -113,7 +113,7 @@ const Home: NextPage<HomeProps> = ({
       </main>
       <aside className={styles.aside}>
         <div className={styles.product}>
-          <Image
+          <img
             className={styles.productImage}
             src={product.image}
             alt={product.name}
@@ -134,7 +134,7 @@ const Home: NextPage<HomeProps> = ({
                 ))
               ).map(member => (
                 <div key={member.name} className={styles.communityMember}>
-                  <Image className={styles.avatar} src={member.avatar} alt={member.name} />
+                  <img className={styles.avatar} src={member.avatar} alt={member.name} />
                   <div className={styles.nameAndBadge}>
                     <span className={styles.communityMemberName}>{member.name}</span>
                     {member.badge &&
