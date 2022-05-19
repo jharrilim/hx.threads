@@ -44,6 +44,34 @@ const mockThreads: Thread[] = [
       },
     ],
   },
+  {
+    comments: [
+      {
+        text: 'I bought these shoes for my childhood best friend and he ran all the way from Greenview Alabama to the Pacific ocean',
+        avatar: `https://i.pravatar.cc/50?u=jenny`,
+        name: 'Jennae',
+        postedAt: '1 day ago',
+        reactions: [
+          { name: 'Florist Chump', type: 'like' },
+          { name: 'Bubb A.', type: 'like' },
+          ...Array(1330).fill(0).map(_ => ({ name: 'Ron F. Letterkenny', type: 'like' }) as const)
+        ]
+      },
+      {
+        text: 'Thank you Jennae 👟👟',
+        avatar: `https://i.pravatar.cc/50?u=floristchump`,
+        name: 'Florist Chump',
+        postedAt: '8 hours ago',
+        reactions: [ { name: 'Jennae', type: 'love' } ],
+      },
+      {
+        text: 'omg so cute 🥺',
+        avatar: `https://i.pravatar.cc/50?u=dan`,
+        name: 'Dan Dan',
+        postedAt: '33 minutes ago',
+      }
+    ]
+  }
 ];
 
 const mockCategories = ['reviews', 'raves', 'sizing'];
